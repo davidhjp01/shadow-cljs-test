@@ -1,5 +1,5 @@
 
-import b from "./test-import";
+import b from "./test-import.js";
 
 class a {
 
