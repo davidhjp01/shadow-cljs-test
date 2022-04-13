@@ -1,0 +1,8 @@
+{:source-paths ["src/js" "src/cljs"]
+ :builds       {:frontend {:target     :browser
+                           :output-dir "js"
+                           :modules    {:main {:entries [test.main]}}
+                           :devtools   {:ignore-warnings true}
+                           :js-options
+                           {:resolve {"test-js" {:target :file
+                                                 :file   "src/js/test.js"}}}}}}
